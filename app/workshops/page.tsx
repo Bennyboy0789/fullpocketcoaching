@@ -64,7 +64,11 @@ function parseCourses(blocks: { t: string; x: string }[]): Course[] {
             body.push(blocks[k].x);
             k++;
           }
-          extras.push({ label, body: body.join(" ") });
+          // Only keep labelled sections that actually have copy — some
+          // headings in the scrape ("Strategic Alignment") have no body.
+          if (body.join(" ").trim()) {
+            extras.push({ label, body: body.join(" ") });
+          }
           j = k;
           continue;
         }
@@ -104,7 +108,7 @@ export default function WorkshopsPage() {
       <PageHero
         eyebrow="Leadership Workshops"
         title="Talks That Create Change, Not Just Inspiration"
-        intro="Half-day and full-day sessions that give teams frameworks they can use the next morning."
+        intro="Interactive sessions from 75 minutes to full-day, built so teams leave with frameworks they can use the next morning."
         image="/images/0912_FullPocketCoaching-133-681x1024.jpg"
       />
 
