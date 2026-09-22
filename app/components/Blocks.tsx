@@ -41,10 +41,12 @@ export function PageContent({
   title,
   blocks,
   heroImage,
+  hideHero,
 }: {
   title: string;
   blocks: Block[];
   heroImage?: string;
+  hideHero?: boolean;
 }) {
   // skip a leading h1 that duplicates the hero title
   let start = 0;
@@ -77,16 +79,18 @@ export function PageContent({
 
   return (
     <div>
-      <section className="bg-navy text-white py-20 px-6">
-        <div className="max-w-4xl mx-auto">
-          <p className="text-gold font-heading uppercase tracking-widest text-sm mb-4">
-            Full Pocket Coaching
-          </p>
-          <h1 className="text-3xl md:text-5xl font-bold font-heading leading-tight max-w-3xl">
-            {title}
-          </h1>
-        </div>
-      </section>
+      {!hideHero && (
+        <section className="bg-navy text-white py-20 px-6">
+          <div className="max-w-4xl mx-auto">
+            <p className="text-gold font-heading uppercase tracking-widest text-sm mb-4">
+              Full Pocket Coaching
+            </p>
+            <h1 className="text-3xl md:text-5xl font-bold font-heading leading-tight max-w-3xl">
+              {title}
+            </h1>
+          </div>
+        </section>
+      )}
       <div className="max-w-4xl mx-auto px-6 py-16">{rendered}</div>
     </div>
   );
