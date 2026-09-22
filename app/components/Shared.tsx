@@ -72,31 +72,44 @@ export function CTABand({
   secondary?: { label: string; href: string };
 }) {
   return (
-    <section className="bg-[#001D40] py-20">
-      <div className="mx-auto max-w-4xl px-6 text-center">
+    <section className="relative isolate overflow-hidden bg-[#001D40]">
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        src="/images/0912_FullPocketCoaching-Conference-157-1024x681.jpg"
+        alt=""
+        aria-hidden
+        className="absolute inset-0 h-full w-full object-cover object-center"
+      />
+      <div className="absolute inset-0 bg-[#001D40]/88" />
+      <div className="relative mx-auto max-w-4xl px-6 py-24 text-center">
+        <p className="mb-4 text-[11px] font-semibold uppercase tracking-[0.3em] text-[#D4AF37]">
+          Start the Conversation
+        </p>
         <h2 className="text-3xl font-extrabold uppercase leading-tight tracking-tight text-white md:text-4xl">
           {title}
         </h2>
-        <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-white/75">
+        <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-white/80">
           {body}
         </p>
-        <div className="mt-9 flex flex-wrap justify-center gap-4">
+        <div className="mt-10 flex flex-wrap justify-center gap-4">
           <a
             href={primary.href}
-            className="bg-[#D4AF37] px-8 py-4 text-[12px] font-bold uppercase tracking-[0.16em] text-[#001D40] transition hover:bg-[#B8860B]"
+            className="bg-[#D4AF37] px-9 py-4 text-[12px] font-bold uppercase tracking-[0.16em] text-[#001D40] transition hover:bg-[#B8860B]"
           >
             {primary.label}
           </a>
           {secondary && (
             <a
               href={secondary.href}
-              className="border border-white/40 px-8 py-4 text-[12px] font-bold uppercase tracking-[0.16em] text-white transition hover:border-[#D4AF37] hover:text-[#D4AF37]"
+              className="border border-white/40 px-9 py-4 text-[12px] font-bold uppercase tracking-[0.16em] text-white transition hover:border-[#D4AF37] hover:text-[#D4AF37]"
             >
               {secondary.label}
             </a>
           )}
         </div>
       </div>
+      {/* hard edge so the band reads as its own section, not the footer top */}
+      <div className="absolute inset-x-0 bottom-0 h-1 bg-[#D4AF37]" />
     </section>
   );
 }

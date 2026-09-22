@@ -241,49 +241,57 @@ export function ServicesCards() {
 
 export function ValuesMission() {
   return (
-    <section className="bg-white py-24">
-      <div className="mx-auto grid max-w-6xl gap-14 px-6 lg:grid-cols-[1fr_1.4fr]">
-        <div>
-          <h2 className="text-sm font-bold uppercase tracking-[0.28em] text-[#001D40]">
-            Core Values
-          </h2>
-          <p className="mt-5 text-sm leading-relaxed text-[#7A7A7A]">
-            At Full Pocket Coaching, we don&apos;t just build better businesses
-            &mdash; we build better leaders, teams, and lives. We live and lead
-            by the L.I.V.E.S. we touch, transform, and change for the better.
-          </p>
-          <ul className="mt-7 space-y-3">
-            {VALUES.map((v) => (
-              <li key={v} className="flex items-center gap-3">
-                <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#D4AF37] text-[10px] font-bold text-[#001D40]">
-                  &#10003;
-                </span>
-                <span className="text-sm font-medium text-[#001D40]">{v}</span>
-              </li>
-            ))}
-          </ul>
-          <h2 className="mt-12 text-sm font-bold uppercase tracking-[0.28em] text-[#001D40]">
-            Mission
-          </h2>
-          <p className="mt-4 text-sm leading-relaxed text-[#7A7A7A]">
-            To help visionary leaders create businesses where people thrive,
-            systems run seamlessly, and growth feels intentional, not chaotic.
-          </p>
-        </div>
+    <section className="bg-[#F2F1EF] py-24">
+      <div className="mx-auto max-w-6xl px-6">
+        <div className="grid gap-14 lg:grid-cols-2 lg:gap-20">
+          {/* values */}
+          <div>
+            <p className="text-[11px] font-bold uppercase tracking-[0.28em] text-[#B8860B]">
+              What We Stand For
+            </p>
+            <h2 className="mt-4 text-3xl font-extrabold uppercase leading-tight tracking-tight text-[#001D40] md:text-4xl">
+              Core Values
+            </h2>
+            <p className="mt-6 text-[1.0625rem] leading-[1.8] text-[#4a4a4a]">
+              At Full Pocket Coaching, we don&apos;t just build better businesses
+              &mdash; we build better leaders, teams, and lives. We live and lead
+              by the L.I.V.E.S. we touch, transform, and change for the better.
+            </p>
+            <ul className="mt-9 space-y-4">
+              {VALUES.map((v) => (
+                <li
+                  key={v}
+                  className="flex items-center gap-4 border-t border-[#001D40]/10 pt-4"
+                >
+                  <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#D4AF37] text-[11px] font-bold text-[#001D40]">
+                    &#10003;
+                  </span>
+                  <span className="text-base font-semibold text-[#001D40]">
+                    {v}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </div>
 
-        <div className="grid gap-4 sm:grid-cols-2">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src="/images/0912_FullPocketCoaching-113-681x1024.jpg"
-            alt="Marni Blythe"
-            className="col-span-2 aspect-[16/9] w-full object-cover object-top sm:col-span-1 sm:aspect-[3/4]"
-          />
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src="/images/0912_FullPocketCoaching-59-681x1024.jpg"
-            alt="Marni speaking"
-            className="hidden aspect-[3/4] w-full object-cover object-top sm:block"
-          />
+          {/* mission + image */}
+          <div className="flex flex-col">
+            <div className="bg-[#001D40] p-9">
+              <p className="text-[11px] font-bold uppercase tracking-[0.28em] text-[#D4AF37]">
+                Our Mission
+              </p>
+              <p className="mt-5 text-xl font-semibold leading-relaxed text-white md:text-2xl">
+                To help visionary leaders create businesses where people thrive,
+                systems run seamlessly, and growth feels intentional, not chaotic.
+              </p>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/images/0912_FullPocketCoaching-113-681x1024.jpg"
+              alt="Marni Blythe"
+              className="mt-6 h-72 w-full object-cover object-top sm:h-96"
+            />
+          </div>
         </div>
       </div>
     </section>

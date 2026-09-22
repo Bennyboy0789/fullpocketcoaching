@@ -20,7 +20,7 @@ const NAV = [
   { label: "About", href: "/about" },
   {
     label: "Services",
-    href: "/about",
+    href: "/keynote-speaker",
     children: [
       { label: "Keynote Speaker", href: "/keynote-speaker" },
       { label: "Fractional COO", href: "/fractional-chief-operating-officer" },
@@ -36,29 +36,30 @@ const NAV = [
 
 function Header() {
   return (
-    <header className="bg-navy text-white sticky top-0 z-50 shadow-md">
-      <div className="max-w-6xl mx-auto px-6 py-3 flex items-center justify-between">
-        <a href="/" className="flex items-center">
+    <header className="sticky top-0 z-50 border-b border-white/10 bg-[#001D40]">
+      <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-3">
+        <a href="/" className="flex shrink-0 items-center">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/images/2022-Full_Pocket_logo-blue-white.png"
             alt="Full Pocket Coaching"
-            className="h-14 w-auto"
+            className="h-12 w-auto"
           />
         </a>
-        <nav className="hidden md:flex items-center gap-6">
+        <nav className="hidden items-center gap-7 md:flex">
           {NAV.map((item) =>
             item.children ? (
-              <div key={item.label} className="relative group">
-                <button className="py-2 text-sm font-medium hover:text-gold">
+              <div key={item.label} className="group relative">
+                <button className="py-2 text-[12px] font-semibold uppercase tracking-[0.14em] text-white/85 transition hover:text-[#D4AF37]">
                   {item.label}
                 </button>
-                <div className="absolute left-0 top-full pt-2 hidden group-hover:block">
-                  <div className="bg-white text-navy rounded shadow-lg py-2 min-w-[220px]">
+                <div className="invisible absolute left-0 top-full pt-3 opacity-0 transition group-hover:visible group-hover:opacity-100">
+                  <div className="min-w-[230px] border-t-2 border-[#D4AF37] bg-white py-2 shadow-xl">
                     {item.children.map((c) => (
                       <a
                         key={c.label}
                         href={c.href}
-                        className="block px-4 py-2 text-sm hover:bg-cream"
+                        className="block px-5 py-2.5 text-sm text-[#001D40] transition hover:bg-[#F2F1EF]"
                       >
                         {c.label}
                       </a>
@@ -70,7 +71,7 @@ function Header() {
               <a
                 key={item.label}
                 href={item.href}
-                className="py-2 text-sm font-medium hover:text-gold"
+                className="py-2 text-[12px] font-semibold uppercase tracking-[0.14em] text-white/85 transition hover:text-[#D4AF37]"
               >
                 {item.label}
               </a>
@@ -78,7 +79,7 @@ function Header() {
           )}
           <a
             href="/contact"
-            className="ml-2 bg-gold text-navy px-5 py-2 rounded-full text-sm font-semibold hover:bg-gold-dark transition-colors"
+            className="ml-1 bg-[#D4AF37] px-6 py-2.5 text-[12px] font-bold uppercase tracking-[0.14em] text-[#001D40] transition hover:bg-[#B8860B]"
           >
             Connect
           </a>
@@ -90,62 +91,56 @@ function Header() {
 
 function Footer() {
   return (
-    <footer className="bg-navy text-white">
-      <div className="max-w-6xl mx-auto px-6 py-16 grid md:grid-cols-3 gap-10">
+    <footer className="border-t border-white/10 bg-[#001A38] text-white">
+      <div className="mx-auto grid max-w-6xl gap-10 px-6 py-16 md:grid-cols-3">
         <div>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/images/2022-Full_Pocket_logo-blue-white.png"
             alt="Full Pocket Coaching"
-            className="h-12 w-auto mb-4"
+            className="mb-5 h-12 w-auto"
           />
-          <p className="text-sm text-white/70 leading-relaxed">
-            Leadership that transforms people, culture, and performance —
+          <p className="max-w-xs text-sm leading-relaxed text-white/65">
+            Leadership that transforms people, culture, and performance &mdash;
             through keynotes, fractional COO/CMO leadership, and workshops for
             high-performing organizations.
           </p>
         </div>
+
         <div>
-          <h3 className="font-heading text-gold uppercase tracking-widest text-sm mb-4">
+          <h3 className="mb-5 text-[11px] font-bold uppercase tracking-[0.24em] text-[#D4AF37]">
             Explore
           </h3>
-          <ul className="space-y-2 text-sm text-white/80">
-            {NAV.filter((n) => !n.children).map((n) => (
-              <li key={n.label}>
-                <a href={n.href} className="hover:text-gold">
-                  {n.label}
-                </a>
-              </li>
-            ))}
-            <li>
-              <a href="/contact" className="hover:text-gold">
-                Connect
-              </a>
-            </li>
+          <ul className="space-y-2.5 text-sm text-white/75">
+            {[...NAV.filter((n) => !n.children), { label: "Connect", href: "/contact" }].map(
+              (n) => (
+                <li key={n.label}>
+                  <a href={n.href} className="transition hover:text-[#D4AF37]">
+                    {n.label}
+                  </a>
+                </li>
+              )
+            )}
           </ul>
         </div>
+
         <div>
-          <h3 className="font-heading text-gold uppercase tracking-widest text-sm mb-4">
-            Let&apos;s Talk
+          <h3 className="mb-5 text-[11px] font-bold uppercase tracking-[0.24em] text-[#D4AF37]">
+            Get in Touch
           </h3>
-          <p className="text-sm text-white/70 mb-4">
-            Want Marni to speak at your next event? Ready to get your team
-            aligned and your business unstuck? Book a 30-minute discovery call.
+          <p className="text-sm leading-relaxed text-white/65">
+            Want Marni to speak at your next event, or ready to get your team
+            aligned? Book a 30-minute discovery call.
           </p>
-          <a
-            href="/contact"
-            className="inline-block bg-gold text-navy px-6 py-3 rounded-full text-sm font-semibold hover:bg-gold-dark transition-colors"
-          >
-            Schedule A Call
-          </a>
-          <div className="flex gap-4 mt-6 text-sm text-white/70">
-            <a href="#" className="hover:text-gold">LinkedIn</a>
-            <a href="#" className="hover:text-gold">YouTube</a>
-            <a href="#" className="hover:text-gold">Instagram</a>
+          <div className="mt-5 flex gap-5 text-sm text-white/75">
+            <a href="#" className="transition hover:text-[#D4AF37]">LinkedIn</a>
+            <a href="#" className="transition hover:text-[#D4AF37]">YouTube</a>
+            <a href="#" className="transition hover:text-[#D4AF37]">Instagram</a>
           </div>
         </div>
       </div>
-      <div className="border-t border-white/10 py-6 text-center text-xs text-white/50">
-        © {new Date().getFullYear()} Full Pocket Coaching. All rights reserved.
+      <div className="border-t border-white/10 py-6 text-center text-xs text-white/45">
+        &copy; {new Date().getFullYear()} Full Pocket Coaching. All rights reserved.
       </div>
     </footer>
   );
@@ -159,7 +154,7 @@ export default function RootLayout({
       lang="en"
       className={`${inter.variable} ${sofia.variable} ${dmSerif.variable}`}
     >
-      <body className="min-h-screen flex flex-col font-sans">
+      <body className="flex min-h-screen flex-col font-sans">
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
