@@ -94,6 +94,8 @@ const DEDICATED = new Set([
   "team",
   "resources",
   "contact",
+  "keynote-speaker",
+  "workshops",
 ]);
 
 export function generateStaticParams() {
