@@ -16,7 +16,13 @@ type Appearance = { show: string; notes: string[] };
 
 function parseAppearances(blocks: { t: string; x: string }[]): Appearance[] {
   const out: Appearance[] = [];
-  const skip = ["media", "check out some of our latest media appearances", "podcast and other media appearances"];
+  const skip = [
+    "media",
+    "check out some of our latest media appearances",
+    "podcast and other media appearances",
+    // "About Marni" is bio copy that lives on the end of this page, not a show.
+    "about marni",
+  ];
   let i = 0;
   while (i < blocks.length) {
     const b = blocks[i];

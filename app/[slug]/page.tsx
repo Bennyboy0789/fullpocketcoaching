@@ -100,6 +100,8 @@ const DEDICATED = new Set([
   "business-consulting",
   "crest-connect",
   "full-pocket-method-certification-program",
+  "cc-book",
+  "mindfulchange",
 ]);
 
 export function generateStaticParams() {
