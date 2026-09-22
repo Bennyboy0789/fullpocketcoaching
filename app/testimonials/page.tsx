@@ -12,10 +12,19 @@ function parseTestimonials(blocks: { t: string; x: string }[]): Entry[] {
   while (i < blocks.length) {
     const b = blocks[i];
     if (b.t === "p" && b.x.startsWith("\u201c")) {
-      const name = blocks[i + 1]?.t === "h2" ? blocks[i + 1].x : "";
-      const role = blocks[i + 2]?.t === "h2" ? blocks[i + 2].x : "";
-      out.push({ quote: b.x, name, role });
-      i += 3;
+      // A single testimonial can span several consecutive <p> blocks before its
+      // attribution (Dr. Sullivan's runs to 7). Collect every paragraph up to
+      // the next heading so long quotes stay with their name.
+      const parts: string[] = [b.x];
+      let j = i + 1;
+      while (j < blocks.length && blocks[j].t === "p") {
+        parts.push(blocks[j].x);
+        j++;
+      }
+      const name = blocks[j]?.t === "h2" ? blocks[j].x : "";
+      const role = blocks[j + 1]?.t === "h2" ? blocks[j + 1].x : "";
+      out.push({ quote: parts.join(" "), name, role });
+      i = j + 2;
     } else {
       i++;
     }
@@ -37,7 +46,13 @@ function parseVideoCredits(blocks: { t: string; x: string }[]): string[] {
 export default function TestimonialsPage() {
   const data = PAGES["testimonials"];
   const entries = parseTestimonials(data.blocks);
-  const credits = parseVideoCredits(data.blocks);
+
+  // Drop anyone already shown as a full card so the credits list adds names
+  // rather than repeating them.
+  const shown = new Set(entries.map((e) => e.name.toUpperCase()));
+  const credits = parseVideoCredits(data.blocks).filter(
+    (c) => !shown.has(c.toUpperCase())
+  );
 
   return (
     <div>
@@ -57,7 +72,7 @@ export default function TestimonialsPage() {
                 className={`flex flex-col border-t-4 bg-white p-8 shadow-[0_1px_2px_rgba(0,29,64,0.06)] ${
                   // alternate the top rule so the grid has rhythm
                   i % 2 === 0 ? "border-[#D4AF37]" : "border-[#001D40]"
-                }`}
+                } ${e.quote.length > 900 ? "md:col-span-2" : ""}`}
               >
                 <svg
                   aria-hidden
@@ -66,7 +81,7 @@ export default function TestimonialsPage() {
                 >
                   <path d="M0 24V14C0 6 4 1 12 0v5C8 6 6 9 6 13h6v11H0zm18 0V14C18 6 22 1 30 0v5c-4 1-6 4-6 8h6v11H18z" />
                 </svg>
-                <blockquote className="flex-1 text-[0.975rem] leading-[1.75] text-[#4a4a4a]">
+                <blockquote className="flex-1 text-[0.975rem] leading-[1.75] text-[#3f3f3f]">
                   {e.quote}
                 </blockquote>
                 {e.name && (
@@ -75,7 +90,7 @@ export default function TestimonialsPage() {
                       {e.name}
                     </p>
                     {e.role && (
-                      <p className="mt-1 text-[11px] font-semibold uppercase tracking-[0.18em] text-[#B8860B]">
+                      <p className="mt-1 text-xs font-semibold uppercase tracking-[0.16em] text-[#8a6a12]">
                         {e.role}
                       </p>
                     )}
