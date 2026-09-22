@@ -47,6 +47,15 @@ const DELIVERABLES = [
   "Establishing weekly and monthly metrics tracking",
   "Establishing key priorities",
   "Solving issues once and for all",
+  "Leveraging existing resources",
+  "A personal plan for profitability and growth",
+  "Working smarter, not harder",
+  "Team productivity and efficiency",
+  "Results-driven strategies",
+  "A fun, loyal work culture",
+  "Finding the \u201chidden money\u201d in your business",
+  "A plan for short and long term goals",
+  "Online and offline strategies",
 ];
 
 /* The proven process is a long run of `li` grouped by phase. The source has
@@ -99,7 +108,24 @@ export default function FCOOPage() {
             You&apos;ve Hit the Ceiling
           </h2>
           <div className="mt-8 space-y-6">
-            {intro.map((p, i) => (
+            {intro.slice(0, 2).map((p, i) => (
+              <p
+                key={i}
+                className="text-[1.0625rem] leading-[1.8] text-[#4a4a4a]"
+              >
+                {p}
+              </p>
+            ))}
+          </div>
+
+          <blockquote className="my-10 border-l-4 border-[#D4AF37] bg-[#F2F1EF] p-8 text-xl font-semibold leading-relaxed text-[#001D40] md:text-2xl">
+            It&apos;s called hitting the ceiling &mdash; and it&apos;s usually
+            because your founding leadership team has never run a practice this
+            size before.
+          </blockquote>
+
+          <div className="space-y-6">
+            {intro.slice(2).map((p, i) => (
               <p
                 key={i}
                 className="text-[1.0625rem] leading-[1.8] text-[#4a4a4a]"
@@ -147,7 +173,7 @@ export default function FCOOPage() {
               <ul className="mt-6 space-y-4">
                 {GREAT.map((g) => (
                   <li key={g} className="flex items-start gap-3">
-                    <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#001D40] text-[10px] font-bold text-[#D4AF37]">
+                    <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#D4AF37] text-[10px] font-bold text-[#001D40]">
                       &#10003;
                     </span>
                     <span className="text-sm leading-relaxed text-[#4a4a4a]">
@@ -170,11 +196,11 @@ export default function FCOOPage() {
           <h2 className="mt-4 text-2xl font-extrabold uppercase tracking-tight text-white md:text-3xl">
             The Categories We Work Through Together
           </h2>
-          <div className="mt-10 flex flex-wrap gap-3">
+          <div className="mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {CATEGORIES.map((c) => (
               <span
                 key={c}
-                className="border border-white/20 px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.14em] text-white/85"
+                className="border border-white/20 px-4 py-3 text-[11px] font-semibold uppercase tracking-[0.14em] text-white/85"
               >
                 {c}
               </span>
@@ -214,7 +240,10 @@ export default function FCOOPage() {
       {/* deliverables */}
       <section className="bg-[#F2F1EF] py-20">
         <div className="mx-auto max-w-6xl px-6">
-          <h2 className="max-w-3xl text-2xl font-extrabold uppercase leading-tight tracking-tight text-[#001D40] md:text-3xl">
+          <p className="text-[11px] font-bold uppercase tracking-[0.28em] text-[#B8860B]">
+            What We Deliver
+          </p>
+          <h2 className="mt-4 max-w-3xl text-2xl font-extrabold uppercase leading-tight tracking-tight text-[#001D40] md:text-3xl">
             Helping Visionary Owners Get Out of Their Own Way
           </h2>
           <div className="mt-10 grid gap-x-10 gap-y-4 sm:grid-cols-2 lg:grid-cols-3">

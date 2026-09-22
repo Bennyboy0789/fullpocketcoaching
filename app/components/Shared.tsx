@@ -30,8 +30,8 @@ export function PageHero({
         </>
       )}
       <div
-        className={`relative mx-auto max-w-6xl px-6 py-20 md:py-28 ${
-          align === "center" ? "text-center" : ""
+        className={`relative mx-auto flex min-h-[42vh] max-w-6xl flex-col justify-center px-6 py-20 md:min-h-[48vh] md:py-24 ${
+          align === "center" ? "items-center text-center" : ""
         }`}
       >
         {eyebrow && (
