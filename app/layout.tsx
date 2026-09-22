@@ -42,15 +42,19 @@ function Footer() {
             Explore
           </h3>
           <ul className="space-y-2.5 text-sm text-white/75">
-            {[...NAV.filter((n) => !n.children), { label: "Connect", href: "/contact" }].map(
-              (n) => (
-                <li key={n.label}>
-                  <a href={n.href} className="transition hover:text-[#D4AF37]">
-                    {n.label}
-                  </a>
-                </li>
-              )
-            )}
+            {[
+              { label: "About", href: "/about" },
+              { label: "Reviews", href: "/testimonials" },
+              { label: "Blog", href: "/blog" },
+              { label: "Media", href: "/media" },
+              { label: "Contact", href: "/contact" },
+            ].map((n) => (
+              <li key={n.label}>
+                <a href={n.href} className="transition hover:text-[#D4AF37]">
+                  {n.label}
+                </a>
+              </li>
+            ))}
           </ul>
         </div>
 
