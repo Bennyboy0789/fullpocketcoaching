@@ -104,6 +104,7 @@ const DEDICATED = new Set([
   "mindfulchange",
   "fractional-chief-operating-officer",
   "fractional-chief-marketing-officer",
+  "about",
 ]);
 
 export function generateStaticParams() {
