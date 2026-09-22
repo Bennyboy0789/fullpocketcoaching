@@ -102,6 +102,8 @@ const DEDICATED = new Set([
   "full-pocket-method-certification-program",
   "cc-book",
   "mindfulchange",
+  "fractional-chief-operating-officer",
+  "fractional-chief-marketing-officer",
 ]);
 
 export function generateStaticParams() {
