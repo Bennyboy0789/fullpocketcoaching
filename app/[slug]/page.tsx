@@ -85,9 +85,20 @@ const CUSTOM: Record<
   "terms-of-use": { eyebrow: "Legal", intro: "" },
 };
 
+/* Routes that have their own designed page component. The [slug] catch-all
+   must not also claim these, or Next will warn about duplicate paths. */
+const DEDICATED = new Set([
+  "home",
+  "about",
+  "testimonials",
+  "team",
+  "resources",
+  "contact",
+]);
+
 export function generateStaticParams() {
   return Object.keys(PAGES)
-    .filter((s) => s !== "home")
+    .filter((s) => !DEDICATED.has(s))
     .map((slug) => ({ slug }));
 }
 
