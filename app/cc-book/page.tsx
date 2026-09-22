@@ -39,9 +39,12 @@ export default function BookPage() {
 
             <form
               className="mt-9 flex flex-col gap-3 sm:flex-row"
-              action="https://formsubmit.co/info@fullpocketcoaching.com"
+              action="https://formsubmit.co/marni@fullpocketcoaching.com"
               method="POST"
             >
+              <input type="hidden" name="_subject" value="Culture Catalyst download request" />
+              <input type="hidden" name="_template" value="table" />
+              <input type="hidden" name="_next" value="https://fullpocketcoaching.com/cc-book?sent=1" />
               <input
                 type="email"
                 name="email"

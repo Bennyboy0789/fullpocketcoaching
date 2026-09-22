@@ -33,9 +33,14 @@ export default function ContactPage() {
           {/* form */}
           <form
             className="space-y-5"
-            action="https://formsubmit.co/info@fullpocketcoaching.com"
+            action="https://formsubmit.co/marni@fullpocketcoaching.com"
             method="POST"
           >
+            {/* FormSubmit config: no captcha interstitial, sensible subject,
+                and a thank-you page on our own domain. */}
+            <input type="hidden" name="_subject" value="New enquiry from fullpocketcoaching.com" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_next" value="https://fullpocketcoaching.com/contact?sent=1" />
             <div className="grid gap-5 sm:grid-cols-2">
               <label className="block">
                 <span className="text-[11px] font-bold uppercase tracking-[0.18em] text-[#001D40]">
