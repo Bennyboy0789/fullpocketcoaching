@@ -12,7 +12,10 @@ export default function AboutPage() {
   // ---- section slices, in the original's order -------------------------
   const intro = b
     .slice(0, b.findIndex((x) => x.t === "h2" && x.x === "What I Do"))
-    .filter((x) => x.t === "p");
+    .filter((x) => x.t === "p")
+    // "Creating Psychological Safety" is rendered as its own lead-in line
+    // above, so drop it from the body run to avoid printing it twice.
+    .filter((x) => x.x !== "Creating Psychological Safety");
   const foundation = listItems().filter(
     (x) => /^(Mindset|Tools|Execution|Evaluation|Traction)\s*[–-]/.test(x)
   );
@@ -125,7 +128,7 @@ export default function AboutPage() {
             </h2>
             <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
               {foundation.map((f) => {
-                const [head, ...rest] = f.split(/\s*[–-]\s*/);
+                const [head, ...rest] = f.split(/\s+[–—]\s+/);
                 return (
                   <div
                     key={f}
