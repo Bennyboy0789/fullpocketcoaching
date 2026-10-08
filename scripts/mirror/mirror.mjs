@@ -172,6 +172,22 @@ while (true) {
 }
 const missing = [...assetSet].filter((p) => !existsSync(join(REPO, "public", p)));
 
+// Elementor's generated CSS points at images with absolute URLs. Make them root-relative,
+// like the pages, so a preview domain loads them from the copy instead of the live site.
+const cssFiles = (dir) =>
+  readdirSync(dir, { withFileTypes: true }).flatMap((e) =>
+    e.isDirectory() ? cssFiles(join(dir, e.name)) : e.name.endsWith(".css") ? [join(dir, e.name)] : [],
+  );
+let cssRewritten = 0;
+for (const file of cssFiles(join(REPO, "public", "wp-content"))) {
+  const css = readFileSync(file, "utf8");
+  const out = css.replace(/https?:\/\/(?:www\.)?fullpocketcoaching\.com(?=\/)/g, "");
+  if (out !== css) {
+    writeFileSync(file, out);
+    cssRewritten++;
+  }
+}
+
 // ---------- 3. Write pages ----------
 // Root-relative URLs keep the copy self-contained on any preview domain. Canonical URLs,
 // social tags, structured data, feeds and sitemaps keep the absolute domain, as on the live site.
@@ -184,11 +200,14 @@ const relativize = (html) => {
   const kept = [];
   for (const re of PROTECT) html = html.replace(re, (m) => `\u0000${kept.push(m) - 1}\u0000`);
   // A bare domain (href="https://fullpocketcoaching.com") becomes "/" so it still goes home.
-  html = html
-    .replace(/https?:\/\/(?:www\.)?fullpocketcoaching\.com(?=\/)/g, "")
-    .replace(/https?:\/\/(?:www\.)?fullpocketcoaching\.com(?=["'])/g, "/")
-    .replace(/https?:\\\/\\\/(?:www\.)?fullpocketcoaching\.com(?=\\\/)/g, "")
-    .replace(/https?:\\\/\\\/(?:www\.)?fullpocketcoaching\.com(?=["'])/g, "\\/");
+  const rewrite = (s) =>
+    s
+      .replace(/https?:\/\/(?:www\.)?fullpocketcoaching\.com(?=\/)/g, "")
+      .replace(/https?:\/\/(?:www\.)?fullpocketcoaching\.com(?=["'])/g, "/")
+      .replace(/https?:\\\/\\\/(?:www\.)?fullpocketcoaching\.com(?=\\\/)/g, "")
+      .replace(/https?:\\\/\\\/(?:www\.)?fullpocketcoaching\.com(?=["'])/g, "\\/");
+  // Only inside tags, scripts and styles: URLs shown as page text must stay exactly as written.
+  html = html.replace(/<(script|style)\b[^>]*>[\s\S]*?<\/\1>|<[^>]+>/gi, rewrite);
   return html.replace(/\u0000(\d+)\u0000/g, (_, i) => kept[+i]);
 };
 
@@ -222,5 +241,6 @@ const sizeOf = (d) => readdirSync(d, { withFileTypes: true }).reduce((s, e) => s
 const pages = Object.values(routes).filter((r) => !r.location);
 console.log(`\npages: ${pages.length} (${pages.filter((r) => r.status === 200).length} ok, other: ${pages.filter((r) => r.status !== 200).map((r) => r.status).join(",") || "none"})`);
 console.log(`redirects: ${Object.values(routes).length - pages.length} | 404 page status: ${nf.status}`);
+console.log(`CSS files with live-domain URLs made root-relative: ${cssRewritten}`);
 console.log(`files copied: ${fetched.size} referenced + whole folders | missing on server: ${missing.length}${missing.length ? "\n  " + missing.slice(0, 20).join("\n  ") : ""}`);
 console.log(`public/wp-content: ${(sizeOf(join(REPO, "public", "wp-content")) / 1e6).toFixed(1)} MB, public/wp-includes: ${(sizeOf(join(REPO, "public", "wp-includes")) / 1e6).toFixed(1)} MB`);
