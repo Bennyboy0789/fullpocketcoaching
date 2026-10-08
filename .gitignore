@@ -4,3 +4,7 @@ out/
 *.log
 .env*.local
 .vercel
+
+# Raw WordPress export (form settings include private email addresses). Rebuild it with
+# scripts/wp-export.php; the site itself is served from mirror/ and public/.
+wordpress/

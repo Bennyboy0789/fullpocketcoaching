@@ -1,0 +1,466 @@
+{
+  "generated": "2026-10-08T14:10:33.497Z",
+  "notFound": {
+    "status": 404,
+    "file": "404.html"
+  },
+  "routes": {
+    "/": {
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "file": "001.html"
+    },
+    "/10-touch-points-every-business-needs-to-build-a-digital-relationship/": {
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "file": "002.html"
+    },
+    "/16-critical-mistakes-business-owners-make-2/": {
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "file": "003.html"
+    },
+    "/2020/03/03/hidden-money-in-your-business/": {
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "file": "004.html"
+    },
+    "/2020/03/31/how-to-serve-clients-during-a-time-of-crisis/": {
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "file": "005.html"
+    },
+    "/2020/04/15/how-to-find-qualified-leads-for-your-business/": {
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "file": "006.html"
+    },
+    "/2020/04/28/create-a-compelling-vision-for-your-business/": {
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "file": "007.html"
+    },
+    "/2020/05/04/revenue-generating-activity-to-grow-your-business/": {
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "file": "008.html"
+    },
+    "/2021/11/30/ready-to-explode-your-sales/": {
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "file": "009.html"
+    },
+    "/2022/02/18/make-more-sales-without-touching-your-marketing-budget/": {
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "file": "010.html"
+    },
+    "/2022/02/19/why-hire-a-fractional-integrator-coo-management-consultant/": {
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "file": "011.html"
+    },
+    "/2022/12/05/reducing-turnover-why-retaining-your-team-is-not-a-myth/": {
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "file": "012.html"
+    },
+    "/2023/02/18/why-hire-a-fractional-executive-team-for-your-dso/": {
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "file": "013.html"
+    },
+    "/2025/11/24/dental-keynote-speaker-leadership-team-culture/": {
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "file": "014.html"
+    },
+    "/2025/11/24/fractional-coo-oral-maxillofacial-practice-scale/": {
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "file": "015.html"
+    },
+    "/2025/11/24/how-hiring-marni-blythe-our-fractional-coo-helped-transform-our-oral-surgery-practice-a-clients-story/": {
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "file": "016.html"
+    },
+    "/2025/11/24/omfs-leadership-full-pocket-method/": {
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "file": "017.html"
+    },
+    "/2025/12/22/healthcare-oms-leadership-keynote/": {
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "file": "018.html"
+    },
+    "/2025/12/22/https-fullpocketcoaching-com-dental-practice-growth-leadership-keynote-speaker/": {
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "file": "019.html"
+    },
+    "/2026/01/03/fractional-coo-reset-workshop-dental-practice/": {
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "file": "020.html"
+    },
+    "/2026/01/03/toxic-culture-in-dental-practices/": {
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "file": "021.html"
+    },
+    "/3-ways-to-in-person-sales-2/": {
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "file": "022.html"
+    },
+    "/5-ways-to-increase-sales-without-marketing-externally-2/": {
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "file": "023.html"
+    },
+    "/6-day-visibility-blueprint/": {
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "file": "024.html"
+    },
+    "/6-figure-months/": {
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "file": "025.html"
+    },
+    "/about/": {
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "file": "026.html"
+    },
+    "/account/": {
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "file": "027.html"
+    },
+    "/blog/": {
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "file": "028.html"
+    },
+    "/business-consulting/": {
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "file": "029.html"
+    },
+    "/category-sitemap.xml": {
+      "status": 200,
+      "type": "text/xml; charset=UTF-8",
+      "file": "030.xml"
+    },
+    "/category/business-growth/": {
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "file": "031.html"
+    },
+    "/category/culture/": {
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "file": "032.html"
+    },
+    "/category/leadership-key-note-speaker-marni-blythe/": {
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "file": "033.html"
+    },
+    "/category/practice-management/": {
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "file": "034.html"
+    },
+    "/category/sales/": {
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "file": "035.html"
+    },
+    "/category/staff-retention/": {
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "file": "036.html"
+    },
+    "/category/uncategorized/": {
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "file": "037.html"
+    },
+    "/cc-book/": {
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "file": "038.html"
+    },
+    "/client-downloadable-files/": {
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "file": "039.html"
+    },
+    "/community/": {
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "file": "040.html"
+    },
+    "/contact": {
+      "status": 301,
+      "location": "https://fullpocketcoaching.com/contact/"
+    },
+    "/contact/": {
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "file": "041.html"
+    },
+    "/crest-connect/": {
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "file": "042.html"
+    },
+    "/feed/": {
+      "status": 200,
+      "type": "application/rss+xml; charset=UTF-8",
+      "file": "043.xml"
+    },
+    "/fractional-chief-marketing-officer/": {
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "file": "044.html"
+    },
+    "/fractional-chief-operating-officer/": {
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "file": "045.html"
+    },
+    "/free-session/": {
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "file": "046.html"
+    },
+    "/full-pocket-method-certification-program/": {
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "file": "047.html"
+    },
+    "/group/": {
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "file": "048.html"
+    },
+    "/keynote-speaker/": {
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "file": "049.html"
+    },
+    "/local-sitemap.xml": {
+      "status": 200,
+      "type": "text/xml; charset=UTF-8",
+      "file": "050.xml"
+    },
+    "/login-2/": {
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "file": "051.html"
+    },
+    "/login/": {
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "file": "052.html"
+    },
+    "/logout/": {
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "file": "053.html"
+    },
+    "/main-sitemap.xsl": {
+      "status": 200,
+      "type": "text/xml; charset=UTF-8",
+      "file": "054.xml"
+    },
+    "/media/": {
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "file": "055.html"
+    },
+    "/members/": {
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "file": "056.html"
+    },
+    "/mindfulchange/": {
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "file": "057.html"
+    },
+    "/ncca-2/": {
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "file": "058.html"
+    },
+    "/ncca/": {
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "file": "059.html"
+    },
+    "/page-sitemap.xml": {
+      "status": 200,
+      "type": "text/xml; charset=UTF-8",
+      "file": "060.xml"
+    },
+    "/password-reset/": {
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "file": "061.html"
+    },
+    "/post-sitemap.xml": {
+      "status": 200,
+      "type": "text/xml; charset=UTF-8",
+      "file": "062.xml"
+    },
+    "/power-profit-package/": {
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "file": "063.html"
+    },
+    "/profile/": {
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "file": "064.html"
+    },
+    "/program/custom-leadership-programs/": {
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "file": "065.html"
+    },
+    "/program/keynote-speaking/": {
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "file": "066.html"
+    },
+    "/program/leadership-workshops/": {
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "file": "067.html"
+    },
+    "/register/": {
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "file": "068.html"
+    },
+    "/resources/": {
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "file": "069.html"
+    },
+    "/retain-my-staff-form/": {
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "file": "070.html"
+    },
+    "/retain-my-staff/": {
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "file": "071.html"
+    },
+    "/simplify-to-scale-business-accelerator-bootcamp/": {
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "file": "072.html"
+    },
+    "/sitemap_index.xml": {
+      "status": 200,
+      "type": "text/xml; charset=UTF-8",
+      "file": "073.xml"
+    },
+    "/sts-bootcamp-application/": {
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "file": "074.html"
+    },
+    "/team": {
+      "status": 301,
+      "location": "https://fullpocketcoaching.com/team/"
+    },
+    "/team/": {
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "file": "075.html"
+    },
+    "/terms-of-use/": {
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "file": "076.html"
+    },
+    "/testimonials": {
+      "status": 301,
+      "location": "https://fullpocketcoaching.com/testimonials/"
+    },
+    "/testimonials/": {
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "file": "077.html"
+    },
+    "/thank-you/": {
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "file": "078.html"
+    },
+    "/under-construction/": {
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "file": "079.html"
+    },
+    "/user/": {
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "file": "080.html"
+    },
+    "/visibility-blueprint-day-1/": {
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "file": "081.html"
+    },
+    "/visibility-blueprint-day-2/": {
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "file": "082.html"
+    },
+    "/visibility-blueprint-day-3/": {
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "file": "083.html"
+    },
+    "/visibility-blueprint-day-4/": {
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "file": "084.html"
+    },
+    "/visibility-blueprint-day-5/": {
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "file": "085.html"
+    },
+    "/visibility-blueprint-day-6/": {
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "file": "086.html"
+    },
+    "/why-eos-works/": {
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "file": "087.html"
+    },
+    "/work-with-me/": {
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "file": "088.html"
+    },
+    "/workshops/": {
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "file": "089.html"
+    }
+  }
+}

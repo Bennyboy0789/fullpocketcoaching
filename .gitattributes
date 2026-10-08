@@ -1,0 +1,6 @@
+# Mirrored WordPress output: store byte-for-byte, no line-ending conversion.
+mirror/** -text
+public/wp-content/** -text
+public/wp-includes/** -text
+public/robots.txt -text
+public/favicon.ico -text
