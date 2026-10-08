@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-08T21:33:40.135Z",
+  "generated": "2026-10-08T21:58:21.450Z",
   "notFound": {
     "status": 404,
     "file": "404.html"
@@ -145,65 +145,75 @@
       "type": "text/html; charset=UTF-8",
       "file": "028.html"
     },
-    "/business-consulting/": {
+    "/blog/2/": {
       "status": 200,
       "type": "text/html; charset=UTF-8",
       "file": "029.html"
     },
-    "/category-sitemap.xml": {
+    "/blog/3/": {
       "status": 200,
-      "type": "text/xml; charset=UTF-8",
-      "file": "030.xml"
+      "type": "text/html; charset=UTF-8",
+      "file": "030.html"
     },
-    "/category/business-growth/": {
+    "/business-consulting/": {
       "status": 200,
       "type": "text/html; charset=UTF-8",
       "file": "031.html"
     },
-    "/category/culture/": {
+    "/category-sitemap.xml": {
       "status": 200,
-      "type": "text/html; charset=UTF-8",
-      "file": "032.html"
+      "type": "text/xml; charset=UTF-8",
+      "file": "032.xml"
     },
-    "/category/leadership-key-note-speaker-marni-blythe/": {
+    "/category/business-growth/": {
       "status": 200,
       "type": "text/html; charset=UTF-8",
       "file": "033.html"
     },
-    "/category/practice-management/": {
+    "/category/culture/": {
       "status": 200,
       "type": "text/html; charset=UTF-8",
       "file": "034.html"
     },
-    "/category/sales/": {
+    "/category/leadership-key-note-speaker-marni-blythe/": {
       "status": 200,
       "type": "text/html; charset=UTF-8",
       "file": "035.html"
     },
-    "/category/staff-retention/": {
+    "/category/practice-management/": {
       "status": 200,
       "type": "text/html; charset=UTF-8",
       "file": "036.html"
     },
-    "/category/uncategorized/": {
+    "/category/sales/": {
       "status": 200,
       "type": "text/html; charset=UTF-8",
       "file": "037.html"
     },
-    "/cc-book/": {
+    "/category/staff-retention/": {
       "status": 200,
       "type": "text/html; charset=UTF-8",
       "file": "038.html"
     },
-    "/client-downloadable-files/": {
+    "/category/uncategorized/": {
       "status": 200,
       "type": "text/html; charset=UTF-8",
       "file": "039.html"
     },
-    "/community/": {
+    "/cc-book/": {
       "status": 200,
       "type": "text/html; charset=UTF-8",
       "file": "040.html"
+    },
+    "/client-downloadable-files/": {
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "file": "041.html"
+    },
+    "/community/": {
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "file": "042.html"
     },
     "/contact": {
       "status": 301,
@@ -212,172 +222,172 @@
     "/contact/": {
       "status": 200,
       "type": "text/html; charset=UTF-8",
-      "file": "041.html"
+      "file": "043.html"
     },
     "/crest-connect/": {
       "status": 200,
       "type": "text/html; charset=UTF-8",
-      "file": "042.html"
+      "file": "044.html"
     },
     "/feed/": {
       "status": 200,
       "type": "application/rss+xml; charset=UTF-8",
-      "file": "043.xml"
+      "file": "045.xml"
     },
     "/fractional-chief-marketing-officer/": {
       "status": 200,
       "type": "text/html; charset=UTF-8",
-      "file": "044.html"
+      "file": "046.html"
     },
     "/fractional-chief-operating-officer/": {
       "status": 200,
       "type": "text/html; charset=UTF-8",
-      "file": "045.html"
+      "file": "047.html"
     },
     "/free-session/": {
       "status": 200,
       "type": "text/html; charset=UTF-8",
-      "file": "046.html"
+      "file": "048.html"
     },
     "/full-pocket-method-certification-program/": {
       "status": 200,
       "type": "text/html; charset=UTF-8",
-      "file": "047.html"
+      "file": "049.html"
     },
     "/group/": {
       "status": 200,
       "type": "text/html; charset=UTF-8",
-      "file": "048.html"
+      "file": "050.html"
     },
     "/keynote-speaker/": {
       "status": 200,
       "type": "text/html; charset=UTF-8",
-      "file": "049.html"
+      "file": "051.html"
     },
     "/local-sitemap.xml": {
       "status": 200,
       "type": "text/xml; charset=UTF-8",
-      "file": "050.xml"
+      "file": "052.xml"
     },
     "/login-2/": {
       "status": 200,
       "type": "text/html; charset=UTF-8",
-      "file": "051.html"
+      "file": "053.html"
     },
     "/login/": {
       "status": 200,
       "type": "text/html; charset=UTF-8",
-      "file": "052.html"
+      "file": "054.html"
     },
     "/logout/": {
       "status": 200,
       "type": "text/html; charset=UTF-8",
-      "file": "053.html"
+      "file": "055.html"
     },
     "/main-sitemap.xsl": {
       "status": 200,
       "type": "text/xml; charset=UTF-8",
-      "file": "054.xml"
+      "file": "056.xml"
     },
     "/media/": {
       "status": 200,
       "type": "text/html; charset=UTF-8",
-      "file": "055.html"
+      "file": "057.html"
     },
     "/members/": {
       "status": 200,
       "type": "text/html; charset=UTF-8",
-      "file": "056.html"
+      "file": "058.html"
     },
     "/mindfulchange/": {
       "status": 200,
       "type": "text/html; charset=UTF-8",
-      "file": "057.html"
+      "file": "059.html"
     },
     "/ncca-2/": {
       "status": 200,
       "type": "text/html; charset=UTF-8",
-      "file": "058.html"
+      "file": "060.html"
     },
     "/ncca/": {
       "status": 200,
       "type": "text/html; charset=UTF-8",
-      "file": "059.html"
+      "file": "061.html"
     },
     "/page-sitemap.xml": {
       "status": 200,
       "type": "text/xml; charset=UTF-8",
-      "file": "060.xml"
+      "file": "062.xml"
     },
     "/password-reset/": {
       "status": 200,
       "type": "text/html; charset=UTF-8",
-      "file": "061.html"
+      "file": "063.html"
     },
     "/post-sitemap.xml": {
       "status": 200,
       "type": "text/xml; charset=UTF-8",
-      "file": "062.xml"
+      "file": "064.xml"
     },
     "/power-profit-package/": {
       "status": 200,
       "type": "text/html; charset=UTF-8",
-      "file": "063.html"
+      "file": "065.html"
     },
     "/profile/": {
       "status": 200,
       "type": "text/html; charset=UTF-8",
-      "file": "064.html"
+      "file": "066.html"
     },
     "/program/custom-leadership-programs/": {
       "status": 200,
       "type": "text/html; charset=UTF-8",
-      "file": "065.html"
+      "file": "067.html"
     },
     "/program/keynote-speaking/": {
       "status": 200,
       "type": "text/html; charset=UTF-8",
-      "file": "066.html"
+      "file": "068.html"
     },
     "/program/leadership-workshops/": {
       "status": 200,
       "type": "text/html; charset=UTF-8",
-      "file": "067.html"
+      "file": "069.html"
     },
     "/register/": {
       "status": 200,
       "type": "text/html; charset=UTF-8",
-      "file": "068.html"
+      "file": "070.html"
     },
     "/resources/": {
       "status": 200,
       "type": "text/html; charset=UTF-8",
-      "file": "069.html"
+      "file": "071.html"
     },
     "/retain-my-staff-form/": {
       "status": 200,
       "type": "text/html; charset=UTF-8",
-      "file": "070.html"
+      "file": "072.html"
     },
     "/retain-my-staff/": {
       "status": 200,
       "type": "text/html; charset=UTF-8",
-      "file": "071.html"
+      "file": "073.html"
     },
     "/simplify-to-scale-business-accelerator-bootcamp/": {
       "status": 200,
       "type": "text/html; charset=UTF-8",
-      "file": "072.html"
+      "file": "074.html"
     },
     "/sitemap_index.xml": {
       "status": 200,
       "type": "text/xml; charset=UTF-8",
-      "file": "073.xml"
+      "file": "075.xml"
     },
     "/sts-bootcamp-application/": {
       "status": 200,
       "type": "text/html; charset=UTF-8",
-      "file": "074.html"
+      "file": "076.html"
     },
     "/team": {
       "status": 301,
@@ -386,12 +396,12 @@
     "/team/": {
       "status": 200,
       "type": "text/html; charset=UTF-8",
-      "file": "075.html"
+      "file": "077.html"
     },
     "/terms-of-use/": {
       "status": 200,
       "type": "text/html; charset=UTF-8",
-      "file": "076.html"
+      "file": "078.html"
     },
     "/testimonials": {
       "status": 301,
@@ -400,67 +410,67 @@
     "/testimonials/": {
       "status": 200,
       "type": "text/html; charset=UTF-8",
-      "file": "077.html"
+      "file": "079.html"
     },
     "/thank-you/": {
       "status": 200,
       "type": "text/html; charset=UTF-8",
-      "file": "078.html"
+      "file": "080.html"
     },
     "/under-construction/": {
       "status": 200,
       "type": "text/html; charset=UTF-8",
-      "file": "079.html"
+      "file": "081.html"
     },
     "/user/": {
       "status": 200,
       "type": "text/html; charset=UTF-8",
-      "file": "080.html"
+      "file": "082.html"
     },
     "/visibility-blueprint-day-1/": {
       "status": 200,
       "type": "text/html; charset=UTF-8",
-      "file": "081.html"
+      "file": "083.html"
     },
     "/visibility-blueprint-day-2/": {
       "status": 200,
       "type": "text/html; charset=UTF-8",
-      "file": "082.html"
+      "file": "084.html"
     },
     "/visibility-blueprint-day-3/": {
       "status": 200,
       "type": "text/html; charset=UTF-8",
-      "file": "083.html"
+      "file": "085.html"
     },
     "/visibility-blueprint-day-4/": {
       "status": 200,
       "type": "text/html; charset=UTF-8",
-      "file": "084.html"
+      "file": "086.html"
     },
     "/visibility-blueprint-day-5/": {
       "status": 200,
       "type": "text/html; charset=UTF-8",
-      "file": "085.html"
+      "file": "087.html"
     },
     "/visibility-blueprint-day-6/": {
       "status": 200,
       "type": "text/html; charset=UTF-8",
-      "file": "086.html"
+      "file": "088.html"
     },
     "/why-eos-works/": {
       "status": 200,
       "type": "text/html; charset=UTF-8",
-      "file": "087.html"
+      "file": "089.html"
     },
     "/work-with-me/": {
       "status": 200,
       "type": "text/html; charset=UTF-8",
-      "file": "088.html"
+      "file": "090.html"
     },
     "/workshops/": {
       "status": 200,
       "type": "text/html; charset=UTF-8",
-      "file": "089.html"
+      "file": "091.html"
     }
   }
 }

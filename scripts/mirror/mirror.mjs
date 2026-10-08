@@ -87,6 +87,8 @@ const linkPaths = (text) => {
   const found = [];
   for (const m of text.matchAll(/<a\b[^>]*?\bhref=(["'])(.*?)\1/gi)) found.push(m[2]);
   for (const m of text.matchAll(/<loc>\s*(.*?)\s*<\/loc>/gi)) found.push(m[1]);
+  // Elementor "load more" / infinite scroll fetches the next page from this attribute.
+  for (const m of text.matchAll(/\bdata-next-page=(["'])(.*?)\1/gi)) found.push(m[2]);
   const paths = [];
   for (let href of found) {
     href = href.replace(/&amp;/g, "&").trim();
